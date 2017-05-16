@@ -13,18 +13,17 @@ then
 fi
 
 declare -a PLUGINS=(
-    "https://github.com/tpope/vim-sensible"             # sensible
-    "https://github.com/tpope/vim-surround"             # wrap blocks
-    "https://github.com/tpope/vim-fugitive"             # git
-    "https://github.com/vim-airline/vim-airline"        # light status
-    "https://github.com/vim-syntastic/syntastic"        # syntax checks
     "https://github.com/tomasr/molokai"                 # color schema
+    "https://github.com/tpope/vim-sensible"             # sensible
+    "https://github.com/vim-airline/vim-airline"        # light status
+    "https://github.com/tpope/vim-fugitive"             # git
+    "https://github.com/vim-syntastic/syntastic"        # syntax checks
     "https://github.com/kien/ctrlp.vim"                 # find mru, buf, f
     "https://github.com/scrooloose/nerdtree"            # find files 
-    "https://github.com/majutsushi/tagbar"              # inspect files
     "https://github.com/ervandew/supertab"              # autocomplete tab
     "https://github.com/plasticboy/vim-markdown"        # markdown
-    "https://github.com/pangloss/vim-javascript"        # javascript
+    "https://github.com/othree/yajs.vim"                # javascript
+    "https://github.com/tpope/vim-surround"             # wrap blocks
 )
 
 
