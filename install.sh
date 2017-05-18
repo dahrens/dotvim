@@ -25,6 +25,7 @@ DOTVIM=~/.vim
 
 echo "If you proceed I will wipe your $VIMRC"
 read -p "Are you sure? " -n 1 -r
+echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     rm $VIMRC
