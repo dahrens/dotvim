@@ -9,3 +9,5 @@ set shiftwidth=4
 
 map <F2> :NERDTreeToggle<CR>
 map <F8> :TagbarToggle<CR>
+
+set pastetoggle=<F3>
