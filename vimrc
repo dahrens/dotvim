@@ -12,3 +12,5 @@ map <F8> :TagbarToggle<CR>
 
 set pastetoggle=<F3>
 let g:airline#extensions#tabline#enabled = 1
+
+:color ron

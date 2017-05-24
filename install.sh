@@ -7,7 +7,6 @@ then
 fi
 
 declare -a PLUGINS=(
-    "https://github.com/tomasr/molokai"                 # color schema
     "https://github.com/tpope/vim-sensible"             # sensible
     "https://github.com/vim-airline/vim-airline"        # light status
     "https://github.com/tpope/vim-fugitive"             # git
