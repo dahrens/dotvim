@@ -16,6 +16,8 @@ declare -a PLUGINS=(
     "https://github.com/ervandew/supertab"              # autocomplete tab
     "https://github.com/othree/yajs.vim"                # javascript
     "https://github.com/tpope/vim-surround"             # wrap blocks
+    "https://github.com/SirVer/ultisnips"               # snippet base
+    "https://github.com/honza/vim-snippets"             # snippets
 )
 
 GIT_CLONE="git clone --depth 1"
