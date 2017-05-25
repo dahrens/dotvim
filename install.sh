@@ -18,6 +18,7 @@ declare -a PLUGINS=(
     "https://github.com/tpope/vim-surround"             # wrap blocks
     "https://github.com/SirVer/ultisnips"               # snippet base
     "https://github.com/honza/vim-snippets"             # snippets
+    "https://github.com/vim-scripts/AutoClose"          # close brackets
 )
 
 GIT_CLONE="git clone --depth 1"
