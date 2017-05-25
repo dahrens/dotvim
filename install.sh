@@ -11,7 +11,6 @@ declare -a PLUGINS=(
     "https://github.com/vim-airline/vim-airline"        # light status
     "https://github.com/tpope/vim-fugitive"             # git
     "https://github.com/vim-syntastic/syntastic"        # syntax checks
-    "https://github.com/kien/ctrlp.vim"                 # find mru, buf, f
     "https://github.com/scrooloose/nerdtree"            # find files 
     "https://github.com/ervandew/supertab"              # autocomplete tab
     "https://github.com/othree/yajs.vim"                # javascript
@@ -19,6 +18,7 @@ declare -a PLUGINS=(
     "https://github.com/SirVer/ultisnips"               # snippet base
     "https://github.com/honza/vim-snippets"             # snippets
     "https://github.com/vim-scripts/AutoClose"          # close brackets
+    "https://github.com/junegunn/fzf"                   # fuzzy find
 )
 
 GIT_CLONE="git clone --depth 1"

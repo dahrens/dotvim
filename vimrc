@@ -1,4 +1,4 @@
-execute pathogen#infect()
+nuexecute pathogen#infect()
 filetype plugin indent on
 
 set encoding=utf-8
@@ -15,6 +15,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 map <F2> :NERDTreeToggle<CR>
 set pastetoggle=<F3>
+map <F4> :FZF<CR>
 
 " YouCompleteMe and UltiSnips compatibility, with the helper of supertab
 " (via http://stackoverflow.com/a/22253548/1626737)
