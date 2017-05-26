@@ -17,15 +17,15 @@ map <F2> :NERDTreeToggle<CR>
 
 set pastetoggle=<F3>
 
-" fzf bindings"
+" fzf bindings
 map <F4> :FZF<CR>
 map <C-p> :FZF<CR>
 
-" launch current file"
+" launch current file
 nnoremap <F5> :!%:p<CR>
 
-" ctrl+s make sure: stty -ioxn"
-noremap <silent> <C-S :update<CR>
+" ctrl+s make sure: stty -ioxn
+noremap <silent> <C-S> :update<CR>
 vnoremap <silent> <C-S> <C-C>:update<CR>
 inoremap <silent> <C-S> <C-O>:update<CR>
 
