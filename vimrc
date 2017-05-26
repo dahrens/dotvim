@@ -1,4 +1,4 @@
-nuexecute pathogen#infect()
+execute pathogen#infect()
 filetype plugin indent on
 
 set encoding=utf-8
@@ -13,6 +13,7 @@ syntax on
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 
+let g:NERDTreeWinPos = "right"
 map <F2> :NERDTreeToggle<CR>
 set pastetoggle=<F3>
 map <F4> :FZF<CR>

@@ -25,6 +25,14 @@ GIT_CLONE="git clone --depth 1"
 VIMRC=~/.vimrc
 DOTVIM=~/.vim
 
+echo "Should i drop all existing plugins?"
+read -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    rm -rf $DOTVIM/bundle/*
+fi
+
 echo "If you proceed I will wipe your $VIMRC"
 read -p "Are you sure? " -n 1 -r
 echo
