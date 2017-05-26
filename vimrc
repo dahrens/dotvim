@@ -12,17 +12,18 @@ set shiftwidth=4
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 
-let g:NERDTreeWinPos = "right"
 map <F2> :NERDTreeToggle<CR>
 
 set pastetoggle=<F3>
 
+let g:ctrlp_extensions = ['tag']
+
 " fzf bindings
 map <F4> :FZF<CR>
-map <C-p> :FZF<CR>
 
 " launch current file
 nnoremap <F5> :!%:p<CR>
+nmap <F8> :TagbarToggle<CR>
 
 " ctrl+s make sure: stty -ioxn
 noremap <silent> <C-S> :update<CR>
