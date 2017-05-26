@@ -33,6 +33,8 @@ read -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+    rm -f $DOTVIM/autoload/pathogen.vim
+    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
     rm -rf $DOTVIM/bundle/*
 fi
 

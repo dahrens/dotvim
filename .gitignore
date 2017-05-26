@@ -1,4 +1,6 @@
 *.swp
 
+autoload/*
+!bundle/.gitkeep
 bundle/*
 !bundle/.gitkeep
