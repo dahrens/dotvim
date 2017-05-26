@@ -19,13 +19,14 @@ declare -a PLUGINS=(
     "https://github.com/honza/vim-snippets"             # snippets
     "https://github.com/vim-scripts/AutoClose"          # close brackets
     "https://github.com/junegunn/fzf"                   # fuzzy find
+    "https://github.com/tpope/vim-commentary"           # bulk comments
 )
 
 GIT_CLONE="git clone --depth 1"
 VIMRC=~/.vimrc
 DOTVIM=~/.vim
 
-echo "Should i drop all existing plugins?"
+echo "Should I drop all existing plugins?"
 read -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]

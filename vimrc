@@ -7,7 +7,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-syntax on
 :color cobalt
 
 let g:airline_powerline_fonts=1
@@ -15,8 +14,20 @@ let g:airline#extensions#tabline#enabled = 1
 
 let g:NERDTreeWinPos = "right"
 map <F2> :NERDTreeToggle<CR>
+
 set pastetoggle=<F3>
+
+" fzf bindings"
 map <F4> :FZF<CR>
+map <C-p> :FZF<CR>
+
+" launch current file"
+nnoremap <F5> :!%:p<CR>
+
+" ctrl+s make sure: stty -ioxn"
+noremap <silent> <C-S :update<CR>
+vnoremap <silent> <C-S> <C-C>:update<CR>
+inoremap <silent> <C-S> <C-O>:update<CR>
 
 " YouCompleteMe and UltiSnips compatibility, with the helper of supertab
 " (via http://stackoverflow.com/a/22253548/1626737)
