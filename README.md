@@ -13,7 +13,6 @@ cd .vim && ./install.sh
 
 ## Code directly included from:
 
-* https://github.com/tpope/vim-pathogen
 * https://github.com/gkjgh/cobalt
 
 ## Usage
