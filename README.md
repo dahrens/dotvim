@@ -18,13 +18,13 @@ cd .vim && ./install.sh
 
 ## Usage
 
-* **<F2>** file tree (on the left)
-* **<F3>** paste mode toggle
-* **<F4>** open fuzzy search in file names recursivly below pwd
-* **<F5>** execute current file
-* **<F8>** open tag bar (on the right)
-* **<Ctrl-S>** save in any mode (you need stty -ionx in .bashrc or .zshrc)
-* **<Ctrl-P>** open fuzzy search use <Ctrl-F> to switch between
+* **`<F2>`** file tree (on the left)
+* **`<F3>`** paste mode toggle
+* **`<F4>`** open fuzzy search in file names recursivly below pwd
+* **`<F5>`** execute current file
+* **`<F8>`** open tag bar (on the right)
+* **`<Ctrl-S>`** save in any mode (you need stty -ionx in .bashrc or .zshrc)
+* **`<Ctrl-P>`** open fuzzy search use <Ctrl-F> to switch between
 			   files, mru, buffers and tags
 
 ### Buffers
