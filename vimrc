@@ -18,6 +18,15 @@ set pastetoggle=<F3>
 
 let g:ctrlp_extensions = ['tag']
 
+" search
+set ignorecase
+set incsearch
+set hlsearch
+
+"mouse
+set mouse=a
+set mousemodel=extend
+
 " fzf bindings
 map <F4> :FZF<CR>
 
