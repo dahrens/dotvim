@@ -8,6 +8,12 @@ set tabstop=4
 set shiftwidth=4
 
 :color cobalt
+:highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+:match ExtraWhitespace /\s\+$/
+
+highlight ColorColumn ctermbg=darkgray
+let &colorcolumn=join(range(81,999),",")
 
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
