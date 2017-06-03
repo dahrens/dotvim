@@ -7,23 +7,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-:color cobalt
-:highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
-:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
-:match ExtraWhitespace /\s\+$/
-
-highlight ColorColumn ctermbg=darkgray
-let &colorcolumn=join(range(81,999),",")
-
-let g:airline_powerline_fonts=1
-let g:airline#extensions#tabline#enabled = 1
-
-map <F2> :NERDTreeToggle<CR>
-
-set pastetoggle=<F3>
-
-let g:ctrlp_extensions = ['tag']
-
 " search
 set ignorecase
 set incsearch
@@ -33,12 +16,29 @@ set hlsearch
 set mouse=a
 set mousemodel=extend
 
+:color cobalt
+:highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+:match ExtraWhitespace /\s\+$/
+
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
+
+let g:ctrlp_extensions = ['tag']
+
+noremap <F2> :NERDTreeToggle<CR>
+set pastetoggle=<F3>
+
 " fzf bindings
-map <F4> :FZF<CR>
+noremap <F4> :FZF<CR>
+inoremap <F4> <esc>:w<CR>:FZF<CR>
+
 
 " launch current file
 nnoremap <F5> :!%:p<CR>
-nmap <F8> :TagbarToggle<CR>
+
+noremap <F6> :vsp $MYVIMRC<CR>
+noremap <F7> :source $MYVIMRC<CR>
 
 " ctrl+s make sure: stty -ioxn
 noremap <silent> <C-S> :update<CR>
