@@ -37,9 +37,6 @@ inoremap <F4> <esc>:w<CR>:FZF<CR>
 " launch current file
 nnoremap <F5> :!%:p<CR>
 
-noremap <F6> :vsp $MYVIMRC<CR>
-noremap <F7> :source $MYVIMRC<CR>
-
 " ctrl+s make sure: stty -ioxn
 noremap <silent> <C-S> :update<CR>
 vnoremap <silent> <C-S> <C-C>:update<CR>
@@ -56,6 +53,9 @@ let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 
 let mapleader = ","
+
+noremap <leader>ev :vsp $MYVIMRC<CR>
+noremap <leader>sv :source $MYVIMRC<CR>
 
 " Move current line up or down
 noremap <leader>- ddp
