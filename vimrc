@@ -33,7 +33,6 @@ set pastetoggle=<F3>
 noremap <F4> :FZF<CR>
 inoremap <F4> <esc>:w<CR>:FZF<CR>
 
-
 " launch current file
 nnoremap <F5> :!%:p<CR>
 
@@ -59,9 +58,10 @@ noremap <leader>sv :source $MYVIMRC<CR>
 
 " Move current line up or down
 noremap <leader>- ddp
-
 noremap <leader>+ ddkkp
-inoremap <c-d> <esc>ddi
+noremap <leader>h :bp<CR>
+noremap <leader>l :bn<CR>
+
 
 " inoremap <esc> <nop>
 inoremap jk <esc>
