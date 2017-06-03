@@ -6,18 +6,19 @@ then
     exit 1
 fi
 
+
 declare -a PLUGINS=(
     "https://github.com/tpope/vim-sensible"             # sensible
     "https://github.com/vim-airline/vim-airline"        # light status
     "https://github.com/tpope/vim-fugitive"             # git
     "https://github.com/vim-syntastic/syntastic"        # syntax checks
-    "https://github.com/scrooloose/nerdtree"            # find files 
+    "https://github.com/scrooloose/nerdtree"            # find files
     "https://github.com/ervandew/supertab"              # autocomplete tab
     "https://github.com/othree/yajs.vim"                # javascript
     "https://github.com/tpope/vim-surround"             # wrap blocks
     "https://github.com/SirVer/ultisnips"               # snippet base
     "https://github.com/honza/vim-snippets"             # snippets
-    "https://github.com/vim-scripts/AutoClose"          # close brackets
+    "https://github.com/jiangmiao/auto-pairs"           # close brackets
     "https://github.com/junegunn/fzf"                   # fuzzy find
     "https://github.com/kien/ctrlp.vim"                 # even more
     "https://github.com/tpope/vim-commentary"           # bulk comments
