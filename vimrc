@@ -59,9 +59,28 @@ noremap <leader>sv :source $MYVIMRC<CR>
 " Move current line up or down
 noremap <leader>- ddp
 noremap <leader>+ ddkkp
+
+" buffer management
 noremap <leader>h :bp<CR>
 noremap <leader>l :bn<CR>
-
+noremap <leader>w :bd<CR>
 
 " inoremap <esc> <nop>
 inoremap jk <esc>
+
+nnoremap <leader>g :set operatorfunc=GrepOperator<cr>g@
+vnoremap <leader>g :<c-u>call GrepOperator(visualmode())<cr>
+
+function! GrepOperator(type)
+    if a:type ==# 'v'
+        normal! `<v`>y
+    elseif a:type ==# 'char'
+        normal! `[v`]y
+    else
+        return
+    endif
+
+    silent execute "grep! -R " . shellescape(@@) . " ."
+    copen
+    redraw!
+endfunction
