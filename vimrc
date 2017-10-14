@@ -1,11 +1,14 @@
 execute pathogen#infect()
 filetype plugin indent on
 
+set modeline
+set modelines=5
+
 set encoding=utf-8
 set nu
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 
 " search
 set ignorecase
@@ -17,6 +20,7 @@ set mouse=a
 set mousemodel=extend
 
 :color cobalt
+:hi Directory guifg=#FF0000 ctermfg=red
 :highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
 :autocmd ColorScheme * highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
 :match ExtraWhitespace /\s\+$/
@@ -82,5 +86,5 @@ function! GrepOperator(type)
 
     silent execute "grep! -R " . shellescape(@@) . " ."
     copen
-    redraw!
+    " redraw!
 endfunction

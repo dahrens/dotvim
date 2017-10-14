@@ -22,6 +22,7 @@ declare -a PLUGINS=(
     "https://github.com/junegunn/fzf"                   # fuzzy find
     "https://github.com/kien/ctrlp.vim"                 # even more
     "https://github.com/tpope/vim-commentary"           # bulk comments
+    "https://github.com/posva/vim-vue.git"              # vue syntax support
 )
 
 GIT_CLONE="git clone --depth 1"
