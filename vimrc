@@ -18,6 +18,7 @@ set hlsearch
 "mouse
 set mouse=a
 set mousemodel=extend
+set clipboard=unnamedplus
 
 :color cobalt
 :hi Directory guifg=#FF0000 ctermfg=red
@@ -32,6 +33,7 @@ let g:ctrlp_extensions = ['tag']
 
 noremap <F2> :NERDTreeToggle<CR>
 set pastetoggle=<F3>
+
 
 " fzf bindings
 noremap <F4> :FZF<CR>
