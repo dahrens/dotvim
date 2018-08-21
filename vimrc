@@ -5,7 +5,8 @@ set modeline
 set modelines=5
 
 set encoding=utf-8
-set nu
+set relativenumber
+set number
 set expandtab
 set tabstop=2
 set shiftwidth=2
